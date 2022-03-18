@@ -1,0 +1,59 @@
+:root{
+  --bg: hsl(220, 10%, 10%);
+  --mid: hsl(220, 10%, 20%);
+  --light: hsl(220, 10%, 90%);
+  font-family: sans-serif;
+}
+
+body{
+  display: flex;
+  height: 100vh;
+  
+  margin: 0;
+
+  color: var(--light);
+  background: var(--bg);
+}
+
+.nav{
+  display: flex;
+  flex-direction: column;
+  width: 10em;
+  gap: 0.25em;
+  padding: 0.25em;
+}
+
+.main{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: var(--mid);
+}
+
+.btnNav{
+  padding: 0.4em;
+  border-radius: 0.2em;
+  text-align: left;
+  background: var(--mid);
+  border: none;
+  color: var(--light);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.2em;
+  cursor: pointer;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+.btnNav:last-child{
+  margin-top: auto;
+}
+
+.logo{
+  color: var(--light);
+  text-decoration: none;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.4em;
+}
